@@ -1,0 +1,38 @@
+
+
+@media only screen and (max-width: 700px) {
+
+}
+
+@media only screen and (min-width: 700px){
+    div.tabProjets {
+        display: grid;
+        width: 100%;
+
+        grid-template-columns:  1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+
+        grid-gap: 40px;
+    }
+
+    div.projet {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    div.projet > img {
+        width: calc(100% - 6px);
+        outline: 3px solid var(--lightgrey);
+        border-radius: 20px 0 20px 0;
+    }
+
+    div.projet > h3 {
+        position: absolute;
+    }
+
+
+    div.projet:nth-child(even) {
+        transform: translateY(50px);
+    }
+}
