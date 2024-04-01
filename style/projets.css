@@ -1,7 +1,62 @@
+div.projets {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+div.projets > h2 {
+    margin: 30px 0;
+
+    font-size: 30px;
+    color: var(--cyan);
+    text-decoration: underline;
+}
+
+div.projets > a {
+    display: block;
+    margin: 50px auto;
+    padding: 5px 10px;
+
+    text-decoration: none;
+    color: var(--white);
+    font-size: 30px;
+
+    border-radius: 20px 0 20px 0;
+    background-color: var(--green);
+}
+
+div.projet > img {
+    width: calc(100% - 6px);
+    outline: 3px solid var(--lightgrey);
+    border-radius: 20px 0 20px 0;
+}
+
+div.projet {
+    position: relative;
+}
+
+div.projet > h3 {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+
+    padding: 5px 10px;
+
+    background-color: var(--white);
+    outline: 2px solid var(--blue);
+    border-radius: 5px;
+
+    color: var(--blue);
+}
+
 
 
 @media only screen and (max-width: 700px) {
-
+    div.tabProjets {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
 }
 
 @media only screen and (min-width: 700px){
@@ -13,6 +68,8 @@
         grid-template-rows: 1fr 1fr;
 
         grid-gap: 40px;
+
+        margin-bottom: 50px;
     }
 
     div.projet {
@@ -20,17 +77,6 @@
         display: flex;
         justify-content: center;
     }
-
-    div.projet > img {
-        width: calc(100% - 6px);
-        outline: 3px solid var(--lightgrey);
-        border-radius: 20px 0 20px 0;
-    }
-
-    div.projet > h3 {
-        position: absolute;
-    }
-
 
     div.projet:nth-child(even) {
         transform: translateY(50px);

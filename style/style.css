@@ -14,7 +14,12 @@
 
 
 body {
+    background: rgb(31,31,31);
+    background: linear-gradient(90deg, rgba(31,31,31,1) 0%, rgba(54,91,109,1) 100%);
+    /*
     background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(52,20,68,1) 75%, rgba(83,24,112,1) 100%);
+    */
+
 }
 
 /* barre de navigation */
@@ -38,24 +43,45 @@ nav > ul{
 
     padding: 5px;
 
-    border-radius: 20px;
+    border-radius: 5px;
     border: 2px solid var(--lightgrey);
 
     background-color: #161616;
 }
 
-nav > ul > li {
+nav > ul > a > li {
     display: inline-block;
+
+    width: 120px;
+
     padding: 5px;
 
-    border-radius: 20px;
+    border-radius: 5px;
 
     font-size: 20px;
+    color: var(--white);
+    text-align: center;
+}
+
+nav > ul > a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+nav > ul > a:hover {
+    color: var(--white);
+}
+
+nav > ul > a:visited {
+    color: var(--white);
+}
+
+nav > ul > a:active {
     color: var(--white);
 }
 
 #navSelect {
-    background: rgba(83,24,112,1);
+    background: var(--green);
 }
 
 /* div accueil */
@@ -127,3 +153,4 @@ footer {
     color: var(--lightgrey);
     font-size: 18px;
 }
+

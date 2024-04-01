@@ -13,10 +13,9 @@
     <!--  barre de navigation  -->
     <nav>
         <ul>
-            <li id="navSelect">Présentation</li>
-            <li>Projets</li>
-            <li>Description</li>
-            <li>Contact</li>
+            <a href=""><li id="navSelect">Présentation</li></a>
+            <a href="projets"><li>Projets</li></a>
+            <a href="profil"><li>Profil</li></a>
         </ul>
     </nav>
     <main>
@@ -24,7 +23,7 @@
         <div class="accueil">
             <img src="image/photo/Photo.png" alt="Photo de moi">
             <div class="mention">
-                <h1>Bonjour je m'appelle Florian Gandon</h1>
+                <h1>Bonjour je m'appelle <a href="profil">Florian Gandon</a></h1>
                 <p>Je suis étudient en 1er année d'informatique à Nantes.</p>
             </div>
         </div>
@@ -34,10 +33,12 @@
         <div class="projets">
             <h2>Mes projets :</h2>
             <div class="tabProjets">
-                <div class="projet">
-                    <h3>Simulation en Python</h3>
-                    <img src="projets/summulationPopulation2023/Exemple.jpg" alt="Image d'un projet">
-                </div>
+                <a href="projets/summulationPopulation2023/index.html">
+                    <div class="projet">
+                        <h3>Simulation en Python</h3>
+                        <img src="projets/summulationPopulation2023/Exemple.jpg" alt="Image d'un projet">
+                    </div>
+                </a>
                 <div class="projet">
                     <h3>IHM en Python</h3>
                     <img src="projets/summulationPopulation2023/Exemple.jpg" alt="Image d'un projet">
@@ -51,7 +52,7 @@
 
                 </div>
             </div>
-            <a href="">Tout mes projets -></a>
+            <a href="projets/">Tout mes projets -></a>
         </div>
     </main>
     <!-- footer -->

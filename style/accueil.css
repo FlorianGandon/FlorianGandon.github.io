@@ -5,9 +5,9 @@ div.accueil {
 }
 
 div.accueil > img {
-    width: 400px;
-
-    border-radius: 25px;
+    width: calc(400px - 6px);
+    outline: 3px solid var(--lightgrey);
+    border-radius: 20px 0 20px 0;
 }
 
 div.mention {
@@ -16,6 +16,22 @@ div.mention {
 }
 
 div.mention > h1 {
+    color: var(--cyan);
+}
+
+div.mention > h1 > a {
+    color: var(--cyan);
+}
+
+div.mention > h1 > a:hover {
+    color: var(--cyan);
+}
+
+div.mention > h1 > a:visited {
+    color: var(--cyan);
+}
+
+div.mention > h1 > a:active {
     color: var(--cyan);
 }
 
@@ -32,9 +48,10 @@ div.mention > p {
     }
 
     div.accueil > img {
-        width: 100%;
+        width: calc(100% - 6px);
 
-        border-radius: 25px;
+        outline: 3px solid var(--lightgrey);
+        border-radius: 20px 0 20px 0;
     }
 
 
@@ -81,11 +98,14 @@ div.mention > p {
         display: flex;
         flex-direction: row;
         align-items: center;
+        column-gap: 20px;
     }
 
     div.accueil > img {
-        width: 40%;
-        height: 40%;
+        width: calc(40% - 6px);
+
+        outline: 3px solid var(--lightgrey);
+        border-radius: 20px 0 20px 0;
     }
     div.mention {
         width: 60%;
