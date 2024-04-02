@@ -133,18 +133,27 @@ p.explication {
 }
 
 /* taille des textes */
-@media only screen and (min-width: 700px) and (max-width: 1000px){
+@media only screen and (min-width: 700px) and (max-width: 850px){
     div.mention > h1 {
-        font-size: 35px;
+        font-size: 40px;
     }
     div.mention > p {
-        font-size: 20px;
+        font-size: 25px;
+    }
+}
+
+@media only screen and (min-width: 850px) and (max-width: 1000px){
+    div.mention > h1 {
+        font-size: 45px;
+    }
+    div.mention > p {
+        font-size: 30px;
     }
 }
 
 @media only screen and (min-width: 1000px) and (max-width: 1200px){
     div.mention > h1 {
-        font-size: 45px;
+        font-size: 50px;
     }
     div.mention > p {
         font-size: 35px;
@@ -156,7 +165,7 @@ p.explication {
         font-size: 55px;
     }
     div.mention > p {
-        font-size: 45px;
+        font-size: 40px;
     }
 }
 

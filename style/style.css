@@ -33,10 +33,21 @@ nav {
     display: flex;
     justify-content: center;
 
-    padding: 10px;
-
     z-index: 20;
 }
+
+/* padding de li dans nav doit partir si la fenêtre est trop petite*/
+
+@media only screen and (min-width: 430px){
+    nav {
+        padding: 10px 0;
+    }
+
+    nav > ul > a > li {
+        width: 120px;
+    }
+}
+
 
 nav > ul{
     display: inline-block;
@@ -52,11 +63,10 @@ nav > ul{
 nav > ul > a > li {
     display: inline-block;
 
-    width: 120px;
+    border-radius: 5px;
 
     padding: 5px;
 
-    border-radius: 5px;
 
     font-size: 20px;
     color: var(--white);
@@ -84,62 +94,6 @@ nav > ul > a:active {
     background: var(--green);
 }
 
-/* div accueil */
-
-/*
-
-projets
-
-div.projets {
-    width: calc(100% - 300px);
-
-    margin: 50px 100px;
-    padding: 20px 50px;
-
-    border: 2px solid var(--green);
-    border-radius: 25px;
-}
-
-div.projets > div.top {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-div.projets > div.top > h2 {
-    font-size: 30px;
-    text-decoration: underline;
-    color: var(--blue);
-}
-
-div.presentation {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
-    padding: 20px 50px;
-}
-
-div.projet {
-    width: 30%;
-    max-width: 600px;
-    min-width: 300px;
-
-    background-color: var(--blue);
-    border: 3px solid var(--cyan);
-    border-radius: 25px;
-}
-
-div.projet > img {
-    width: 100%;
-    border-radius: 25px 25px 0 0;
-}
-
-div.projet:last-child {
-    margin-right: 0;
-}
-*/
 /* footer */
 
 footer {

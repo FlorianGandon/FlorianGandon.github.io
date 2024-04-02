@@ -23,6 +23,7 @@ div.projets > a {
 
     border-radius: 20px 0 20px 0;
     background-color: var(--green);
+    outline: 2px solid var(--lightgrey);
 }
 
 div.projet > img {
