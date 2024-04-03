@@ -1,0 +1,9 @@
+{
+  "projets" : [
+    {
+      "title" : "Simulation d'une population en Python.",
+      "reduceTitle" : "Simulation en Python",
+      "iconPath" : "/projets/summulationPopulation2023/Exemple.jpg"
+    }
+  ]
+}
