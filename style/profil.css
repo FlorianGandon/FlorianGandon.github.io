@@ -1,0 +1,22 @@
+p.presentation {
+    color: var(--white);
+    font-size: 20px;
+}
+
+p.presentation > span {
+    display: inline-block;
+    width: 40px;
+}
+
+div.information > h2 {
+    display: inline-block;
+    margin: 20px 5px 0 0;
+
+    font-size: 30px;
+    color: var(--cyan);
+}
+
+div.information > a {
+    font-size: 25px;
+    color: var(--green);
+}

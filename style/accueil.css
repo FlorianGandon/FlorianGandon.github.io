@@ -71,27 +71,6 @@ div.mention > p {
         text-align: center;
     }
 }
-/*
-@media only screen and (min-width: 700px) and (max-width: 1400px){
-    div.accueil {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    div.mention {
-        width: 90%;
-    }
-
-    div.mention > h1 {
-        font-size: 70px;
-    }
-
-    div.mention > p {
-        font-size: 48px;
-        margin-left: 8%;
-    }
-}*/
 
 @media only screen and (min-width: 700px) {
     div.accueil {
@@ -130,6 +109,22 @@ p.explication {
     color: var(--white);
     font-size: 20px;
     text-align: justify;
+}
+
+p.explication > a {
+    color: var(--white);
+}
+
+p.explication > a:hover {
+    color: var(--white);
+}
+
+p.explication > a:visited {
+    color: var(--white);
+}
+
+p.explication > a:active {
+    color: var(--white);
 }
 
 /* taille des textes */
