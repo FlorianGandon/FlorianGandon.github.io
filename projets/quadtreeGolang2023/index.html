@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style/style.css">
+    <link rel="stylesheet" href="../../style/main.css">
+    <link rel="stylesheet" href="../../style/pageProjet.css">
+    <title>Portfolio de Florian GANDON</title>
+</head>
+<body>
+<!--  barre de navigation  -->
+<nav>
+    <ul>
+        <a href="../../"><li>Présentation</li></a>
+        <a href="../"><li  id="navSelect">Projets</li></a>
+        <a href="../../profil"><li>Profil</li></a>
+    </ul>
+</nav>
+<div class="en_tete">
+    <h1>Amélioration d'une base d'un jeux RPG en Golang</h1>
+    <p>janv. 2023</p>
+</div>
+<main>
+    <img class="imgFullMain" src="Exemple.png" alt="Image de mon projet">
+
+    <h2>Présentation :</h2>
+    <p>
+        <span></span>
+        Ce projet était un travail de mon université à faire en duo, je l’ai fait avec Armel Cloarec.
+        Au début on nous a fournit une base d’un jeu RPG avec des tuiles de 16 par 16 pixels, avec un personnage.
+        <br>
+        <br>
+        <span></span>
+        Dans la première partie, nous dûmes récupérer le terrain à partir sur un fichier texte, le stocker dans un liste de liste et de l’afficher sur la fenêtre. Ensuite il fallait créer un package où la carte était enregistré dans un Quadtree.
+        <br>
+        <br>
+        <span></span>
+        La deuxième grande partie était une série de demande à implémenter sur la base tout en permettant l’activation et la désactivation de ce module dans un fichier configuration.
+        <br>
+        <br>
+
+        Les modules complémentaire sont :
+        <ul>
+            <li>le déplacement de la caméra pour qu’elle soit fluide (sinon elle se déplace de case en case)</li>
+            <li>StopCamera :  la caméra n’affiche pas des zones en dehors de la carte sauf dans le cas où le carte est plus petite que l'affichage alors la carte sera au centre.</li>
+            <li>RoundEarth : la carte se répète à l'infini donc le joueur ne peut pas la quitter</li>
+            <li>RandomGeneration : génère une carte de manière aléatoire et infinie</li>
+            <li>la sauvegarde d’une carte généré aléatoirement</li>
+            <li>ConnectedTile : les textures s’adapte des tuiles autours d’elle pour faire des contours plus naturels.</li>
+            <li>ActiveBigStep : qui permet de se déplacer plus vite avec CTRL + les flèches directionnelles.</li>
+            <li>BetterCharacter : offre un affichage du joueur meilleur</li>
+            <li>BetterBlocking : le joueur ne peut pas marcher sur l’eau et les murs (sauf en debug mode)</li>
+            <li>ActivePortal : permet de créer deux portail pour se téléporter</li>
+            <li>ActiveParticlesPortal : ajoute des particules au portails</li>
+            <li>ActiveScrolling : change la taille d'affichage avec la molette de la souris </li>
+        </ul>
+    </p>
+
+
+    <h2>Les apprentissages :</h2>
+    <p>
+        <span></span>
+        Tous d’abord pour la génération aléatoire nous avons modifier une classe du programme de base ce qui a empêcher les testes du prof de fonctionner. Ce qui nous montre qu’un implémentation d’un bout de code ne doit pas venir modifier le code existant car cela peut casser des testes automatiques et empêcher le programme de fonctionner normalement.
+    </p>
+</main>
+<!-- footer -->
+<footer>
+    <p>Made by Florian Gandon</p>
+</footer>
+</body>
+<script src="test.js"></script>
+</html>

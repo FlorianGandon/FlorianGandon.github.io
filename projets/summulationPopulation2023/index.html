@@ -1,23 +1,20 @@
-<!doctype html>
-<html lang="fr">
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../style/style.css">
     <link rel="stylesheet" href="../../style/main.css">
     <link rel="stylesheet" href="../../style/pageProjet.css">
+    <title>Portfolio de Florian GANDON</title>
 </head>
 <body>
 <!--  barre de navigation  -->
 <nav>
     <ul>
-        <li id="navSelect">Présentation</li>
-        <li>Projets</li>
-        <li>Description</li>
-        <li>Contact</li>
+        <a href="../../"><li>Présentation</li></a>
+        <a href="../"><li  id="navSelect">Projets</li></a>
+        <a href="../../profil"><li>Profil</li></a>
     </ul>
 </nav>
 <div class="en_tete">
@@ -25,11 +22,51 @@
     <p>janv. 2023</p>
 </div>
 <main>
-    <img src="Exemple.png" alt="Image de mon projet">
+    <img class="imgFullMain" src="Exemple.png" alt="Image de mon projet">
+
+    <h2>Présentation :</h2>
+    <p>
+        <span></span>
+        L’objectif principale est de faire une simulation d’une population d’humain avec de nombreux paramètre facilement modifiable. Pour cela j’ai essayé de refaire le concept de la sélection naturelle, il y a donc deux notions, la personnes peut mourir, et la personnes peut se reproduire et faire un ou des enfants avec des paramètres légèrement différents. Il faut donc que la population trouve entre un équilibre de bien manger sans pour autant avoir des caractéristiques qui lui consomme trop de nourriture.
+        <br>
+        <br>
+        Les humains sont définit par différentes informations qui sont :
+        <ul>
+            <li>un objectif : soit se reproduire, soit aller chercher à manger ou errer</li>
+            <li>une vitesse : pour aller vers un objectif</li>
+            <li>une distance de vision : il ne vont vers un objectif si il ne voit pas</li>
+            <li>la faim : décent en fonction de leur vision et le leur vitesse</li>
+            <li>un âge : pour se reproduire, et pour mourir de vieillesse</li>
+        </ul>
+    </p>
+
+
+    <h2>Les apprentissages :</h2>
+    <p>
+        <span></span>
+        Il fait partie des premiers programmes informatique que j’ai fait en 2023 (avant ce portfolio) donc les apprentissages vont se ressembler car je ne faisait pas une observation sur mon travail.
+        <br>
+        <br>
+        <span></span>
+        Le nom des variables ne sont pas clair, je ne savait pas forcement comment les nommés, choisir la forme, la langue. Ce que j’en tire c’est qu’il faut mettre les constantes en majuscule, pour les autres variable il faut utiliser la forme camelCase et utiliser une seul langue.
+        <br>
+        <br>
+        <span></span>
+        Le fichier spécialiser pour les constantes est une bonne idée, au départ je voulais le faire en fichier texte, puis j’ai choisie un fichier python car c’est très rapide à mettre en place et qu’on voit visuellement dans un IDE. Je garde l’idée pour de petit programme simple et rapide mais un défaut c’est que lors du compilage on perd ce fichier, l’alternative donc pour les programmes plus important est l’utilisation d’un fichier JSON. Il peut être exploiter par de nombreux langages en gardant sa forme, peut être lu et modifier facilement. Mais il est plus compliqué de l’intégrer dans un programme.
+        <br>
+        <br>
+        <span></span>
+        Le programme est mal expliquer, dans la version du mon git pour j’ai ajouter des commentaires et un diagramme orienté objet pour que ceux qui veulent le comprendre le puissent mais sinon le programme est très peut documenté. Je sais maintenant l’importance de documenté sont code, que se soit pour le partager au autre et le comprendre après plusieurs année. Le diagramme objet quant a lui permet de voir visuellement les classes et les relations entre elles.
+        <br>
+        <br>
+        <span></span>
+        Le programme est très peut optimiser. Tout d’abord python est un langage orienté objet mais j’utilise l’héritage que pour la classe Humain alors que j’aurais pus le faire plus souvent. La recherche des objectifs est très laborieuse ou pour chaque humain  je regarde tout les éléments de la carte.
+    </p>
 </main>
 <!-- footer -->
 <footer>
     <p>Made by Florian Gandon</p>
 </footer>
 </body>
+<script src="test.js"></script>
 </html>
