@@ -79,7 +79,7 @@ div.projet > h3 {
         justify-content: center;
     }
 
-    div.projet:nth-child(even) {
+    div.tabProjets>a:nth-child(even) {
         transform: translateY(50px);
     }
 }
